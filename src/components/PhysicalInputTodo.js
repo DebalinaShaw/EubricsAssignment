@@ -7,7 +7,7 @@ const PhysicalInputTodo = () => {
     e.preventDefault();
     try {
       const body = { description };
-      const response = await fetch("http://localhost:5000/todos/physical", {
+      const response = await fetch("https://todobackend-i03i.onrender.com/todos/physical", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
